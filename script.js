@@ -109,8 +109,14 @@ function calculateTax(age, income, extraIncome, deductions) {
 function displayModal(tax) {
   const modal = document.getElementById("modal");
   const modalContent = document.getElementById("modalContent");
-  modalContent.textContent = `${tax.toFixed(2)} Lakhs`;
-  modal.style.display = "block";
+  if(tax===0) {
+    modalContent.textContent = 'No tax';
+    modal.style.display = "block";
+  }
+  else {
+    modalContent.textContent = `Your Overall income will be ${tax.toFixed(2)} Lakhs after tax deductions`;
+    modal.style.display = "block";
+  }
 }
 
 document.getElementById("submitBtn").addEventListener("click", function () {
