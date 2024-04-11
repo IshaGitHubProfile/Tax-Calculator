@@ -4,7 +4,7 @@
 
 This Tax Calculator web application enables users to compute their taxes based on their income, deductions, and age. It implements a specific tax calculation algorithm that considers the user's age bracket and income level. Additionally, the application provides error handling for incorrect inputs and displays results in a modal window.
 
-### Live Site - https://tax-calculator-chi-seven.vercel.app/
+### Live Site - https://tax-calc-henna.vercel.app/
 
 ### Screenshots
 ![Screenshot (130)](https://github.com/IshaGitHubProfile/Tax-Calculator/assets/143515190/892d5bfc-2628-41ab-b6d3-3eb38ced932e)
