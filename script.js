@@ -8,7 +8,7 @@ inputFields.forEach((input) => {
 
   input.addEventListener("input", function () {
   
-    if (isNaN(this.value)) {
+    if (isNaN(this.value) || this.value==='') {
     
       errorIcon.style.display = "inline-block";
     } else {

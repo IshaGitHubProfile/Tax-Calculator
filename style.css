@@ -9,8 +9,9 @@ body {
     justify-content: center;
     align-items: center;
     border: 1px solid gray;
-    width: 40rem;
-    height: 40rem;
+    width: 100%;
+    max-width: 40rem;
+    height: auto;
     margin: auto;
     margin-top: 3rem;
 }
@@ -66,7 +67,7 @@ input[type="text"] {
     text-align: center;
 }
 .lower-half input {
-    width: 28rem;
+    width: 100%;
     padding: 0.8rem;
     border-radius: 3px;
     border: 1px solid gray;
@@ -101,8 +102,8 @@ input[type="text"] {
     text-align: center;
     display: none;
     position: fixed;
-    height: 25rem;
-    width: 50rem;
+    height: 100%;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -154,23 +155,22 @@ input[type="text"] {
     border-radius: 3px;
     padding: 0.7rem;
     margin-top: 2rem;
-    width: 30rem;
+    width: 100%;
     margin-bottom: 2rem;
     cursor: pointer;
 }
 @media screen and (max-width: 768px) {
     .container {
-        height: 35rem;
-        width: 30rem;
+        max-width: 23rem;
     }
     #age {
-        width: 21.5rem;
+        width: 19rem;
     }
     .lower-half input {
-        width: 20rem;
+        width: 17rem;
     }
     #submitBtn {
-        width: 22rem;
+        width: 19rem;
     }
     .error-tooltip {
         font-size: 0.9rem;
