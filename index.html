@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tax Calculator</title>
     <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -57,12 +57,13 @@
         <div class="lower-half">
             <div class="input-container">
                 <select id="age" name="age" >
+                    <option value=""></option>
                     <option value="<40">&lt; 40</option>
                     <option value="40-60">&ge; 40 &lt; 60</option>
                     <option value=">=60">&ge; 60</option>
                   </select>
-                <span class="error-icon"></span>
-                <div class="error-tooltip">
+                <span class="age-error-icon"></span>
+                <div class="error-tooltip age-error-message">
                     Please select your age group.
                 </div>
             </div>

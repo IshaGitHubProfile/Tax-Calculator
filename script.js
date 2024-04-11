@@ -1,7 +1,6 @@
 
 const inputFields = document.querySelectorAll('input[type="text"]');
 
-
 inputFields.forEach((input) => {
   const errorIcon = input.nextElementSibling;
   const errorTooltip = errorIcon.nextElementSibling;
@@ -29,6 +28,44 @@ inputFields.forEach((input) => {
     errorTooltip.style.display = "none";
   });
 });
+
+const ageSelect = document.getElementById('age'); 
+function showErrorIcon() {
+  const errorIcon = document.querySelector('.age-error-icon');
+  errorIcon.style.display = "inline-block";
+}
+function hideErrorIcon() {
+  const errorIcon = document.querySelector('.age-error-icon');
+  errorIcon.style.display = "none";
+}
+function showAgeErrorMessage() {
+  const errorMessage = document.querySelector('.age-error-message');
+  errorMessage.style.display = "block";
+}
+
+function hideAgeErrorMessage() {
+  const errorMessage = document.querySelector('.age-error-message');
+  errorMessage.style.display = "none";
+}
+
+ageSelect.addEventListener('change', function() {
+  if (this.value === '') {
+    showErrorIcon();
+    showAgeErrorMessage();
+  } else {
+    hideErrorIcon();
+    hideAgeErrorMessage();
+  }
+});
+
+document.querySelector('.age-error-icon').addEventListener('mouseenter', function() {
+  showAgeErrorMessage();
+});
+document.querySelector('.age-error-icon').addEventListener('mouseleave', function() {
+  hideAgeErrorMessage();
+});
+
+
 
 function validateForm() {
     const age = document.getElementById("age").value;
