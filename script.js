@@ -114,7 +114,7 @@ function displayModal(tax) {
     modal.style.display = "block";
   }
   else {
-    modalContent.textContent = `Your Overall income will be ${tax.toFixed(2)} Lakhs after tax deductions`;
+    modalContent.textContent = `Your Overall tax will be ${tax.toFixed(2)} Lakhs`;
     modal.style.display = "block";
   }
 }
